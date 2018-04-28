@@ -1,0 +1,38 @@
+<html>  
+	<body>
+	<form name="form_name" method="post" action = "abc.php">
+	<pre>
+		FIRST NAME:&nbsp<input type="text" name="fname" id="fname"required >
+		
+		LAST NAME:&nbsp<input type="text" name="lname" id="lname" required>
+		
+		ADDRESS:&nbsp<input type="textarea" name="addr" id="addr" required>
+		
+		
+				<input type="button" value="SUBMIT" id="b1" onclick="validate()">
+	</pre>
+	</form>
+	</body>
+	<script>
+	
+	
+			function validate()  {
+				var fname=document.getElementById("fname").value;
+				var lname=document.getElementById("lname").value;
+				var addr=document.getElementById("addr").value;
+				if(fname==null || fname=="")
+				{
+					alert("name must be filled!!!");
+				}
+				if(lname==null || lname=="")
+				{
+					alert("last name must be filled!!!");
+				}
+				if(addr==null || addr=="")
+				{
+					alert("address must be filled!!!");
+				}
+				
+			}
+	</script>
+</html>
